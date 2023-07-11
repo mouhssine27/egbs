@@ -14,10 +14,7 @@
                             <div class="col">
                                 <input type="text" class="form-control top" placeholder="username" name="username">
                             </div>
-                            <div class="col">
-                                <input type="number" class="form-control ageclass" placeholder="age" name="age"
-                                    id="age">
-                            </div>
+                            <test-vue></test-vue>
                         </div>
                         <div class="row mt-2">
                             <div class="col">
@@ -28,21 +25,9 @@
                                 <textarea class="form-control" placeholder="adresse" rows="3" name="adresse"></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput">Married</label> <br>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="married" id="married" value="1">
-                                <label class="form-check-label" for="inlineRadio1">oui</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="married" id="inlineRadio2" value="0">
-                                <label class="form-check-label" for="inlineRadio2">non</label>
-                            </div>
-                        </div>
+                        <nbrkids-vue></nbrkids-vue>
                         <div class="row mt-2">
-                            <div class="col">
-                                <input type="number" class="form-control" placeholder="Nbr kids" id="kids" name="kids">
-                            </div>
+                           
                             <div class="col">
                                 <div class="d-flex justify-content-between">
                                     <div>
@@ -71,8 +56,8 @@
 
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel</button>
+                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                        <button class="btn mt-5" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel</button>
                     </form>
                 </div>
             </form>
