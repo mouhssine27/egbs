@@ -32,6 +32,8 @@
     <link href="{{ asset('compact-menu/assets/css/users/user-profile.css') }}" rel="stylesheet" type="text/css" />
     <!--  END CUSTOM STYLE FILE  -->
 
+      
+
     
 </head>
 
@@ -206,6 +208,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+   
 
     <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="{{ asset('compact-menu/assets/js/libs/jquery-3.1.1.min.js') }}"></script>
@@ -213,6 +216,7 @@
     <script src="{{ asset('compact-menu/bootstrap/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('compact-menu/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
     <script src="{{ asset('compact-menu/assets/js/app.js') }}"></script>
+   
     <script>
         $(document).ready(function () {
             App.init();
@@ -251,8 +255,8 @@
 
     </script>
     <!-- END PAGE LEVEL SCRIPTS -->
-
-
+  
+  
 </body>
 
 </html>
