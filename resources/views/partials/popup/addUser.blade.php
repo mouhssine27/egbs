@@ -56,8 +56,8 @@
 
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button class="btn" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel</button>
+                        <button type="submit" class="btn btn-primary mt-5">Submit</button>
+                        <button class="btn mt-5" data-dismiss="modal"><i class="flaticon-cancel-12"></i> Cancel</button>
                     </form>
                 </div>
             </form>

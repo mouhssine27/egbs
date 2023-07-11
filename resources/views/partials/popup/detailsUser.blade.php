@@ -24,7 +24,11 @@
                         @else
                         <button type="button" class="list-group-item list-group-item-action" >married : oui</button>
                         @endif
+                        @if($utilisateur->kids == null)
+                        <button type="button" class="list-group-item list-group-item-action" >kids : not kids</button>
+                        @else
                         <button type="button" class="list-group-item list-group-item-action" >kids : {{ $utilisateur->kids }}</button>
+                        @endif
                     </div>
                 </div>
              

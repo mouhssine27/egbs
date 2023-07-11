@@ -26,17 +26,29 @@ class UserController extends Controller
     $jobsid =  $selectJobs->id;
 
 
-
-    Utilisateur::create(
-        [
-        'username' => $data['username'],
-        'age'=>$data['age'],
-        'date_of_birth'=>$data['birdthay'],
-        'adresse'=>$data['adresse'],
-        'married'=>$data['married'],
-        'kids'=>$data['kids'],
-        'jobs_id'=>$jobsid 
-        ]);
+    if(isset($data['kids'])){
+        Utilisateur::create(
+            [
+            'username' => $data['username'],
+            'age'=>$data['age'],
+            'date_of_birth'=>$data['birdthay'],
+            'adresse'=>$data['adresse'],
+            'married'=>$data['married'],
+            'kids'=>$data['kids'],
+            'jobs_id'=>$jobsid 
+            ]);
+    }else{
+        Utilisateur::create(
+            [
+            'username' => $data['username'],
+            'age'=>$data['age'],
+            'date_of_birth'=>$data['birdthay'],
+            'adresse'=>$data['adresse'],
+            'married'=>$data['married'],
+            'jobs_id'=>$jobsid 
+            ]);
+    }
+    
 
         if(isset($data['jobName']) ){
             Jobs::create([

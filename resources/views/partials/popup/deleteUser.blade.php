@@ -12,12 +12,16 @@
             </div>
             <div class="modal-footer">
                 <form  method="POST" action="{{ route('deleteUser',$utilisateur->id) }}">
+                  @method('DELETE')
                     @csrf
     
-              <button type="submit" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-              <button type="rest" class="btn btn-danger" style="background-color: red">Supprimer</button>
-            </form>
+                  <button type="reset" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                  <button type="submit" class="btn btn-danger" style="background-color: red">Supprimer</button>
+              </form>
             </div>
           </div>
     </div>
   </div>
+
+
+  
